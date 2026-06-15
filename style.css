@@ -1,0 +1,508 @@
+/* =====================================
+   RESET
+===================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#06111f;
+
+    color:white;
+
+    overflow-x:hidden;
+
+    position:relative;
+}
+
+
+.special-card{
+
+    border:2px solid #38bdf8 !important;
+
+    box-shadow:
+    0 0 20px rgba(56,189,248,.3),
+    0 0 40px rgba(56,189,248,.15);
+
+    position:relative;
+}
+
+.special-card::before{
+
+    content:'⭐ FAVORITA';
+
+    position:absolute;
+
+    top:-12px;
+
+    right:20px;
+
+    background:#38bdf8;
+
+    color:#06111f;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+}
+
+/* =====================================
+   FUNDO
+===================================== */
+
+.background{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:-2;
+
+    background:
+    radial-gradient(circle at top left,
+    rgba(56,189,248,.15),
+    transparent 35%),
+
+    radial-gradient(circle at bottom right,
+    rgba(14,165,233,.12),
+    transparent 40%),
+
+    #06111f;
+}
+
+body::before{
+
+    content:'';
+
+    position:fixed;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+    rgba(255,255,255,.02) 1px,
+    transparent 1px),
+
+    linear-gradient(
+    90deg,
+    rgba(255,255,255,.02) 1px,
+    transparent 1px);
+
+    background-size:40px 40px;
+
+    z-index:-1;
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    min-height:60vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 20px;
+}
+
+.hero-content{
+
+    max-width:900px;
+}
+
+.tag{
+
+    display:inline-block;
+
+    padding:10px 18px;
+
+    border-radius:50px;
+
+    background:rgba(56,189,248,.1);
+
+    border:1px solid rgba(56,189,248,.3);
+
+    color:#7dd3fc;
+
+    margin-bottom:25px;
+
+    font-size:.9rem;
+}
+
+.hero h1{
+
+    font-size:4.5rem;
+
+    font-weight:800;
+
+    margin-bottom:15px;
+}
+
+.hero h1 span{
+
+    color:#38bdf8;
+}
+
+.hero p{
+
+    color:#94a3b8;
+
+    font-size:1.1rem;
+
+    line-height:1.8;
+}
+
+/* =====================================
+   TIMELINE
+===================================== */
+
+.timeline{
+
+    position:relative;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:50px 0 120px;
+}
+
+.timeline::before{
+
+    content:'';
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    width:5px;
+
+    height:100%;
+
+    transform:translateX(-50%);
+
+    background:linear-gradient(
+    to bottom,
+    #38bdf8,
+    #0ea5e9,
+    #38bdf8
+    );
+
+    box-shadow:
+    0 0 10px #38bdf8,
+    0 0 25px #38bdf8;
+}
+
+/* =====================================
+   ITEMS
+===================================== */
+
+.timeline-item{
+
+    width:50%;
+
+    position:relative;
+
+    margin:50px 0;
+}
+
+.timeline-item.left{
+
+    left:0;
+
+    padding-right:60px;
+}
+
+.timeline-item.right{
+
+    left:50%;
+
+    padding-left:60px;
+}
+
+/* =====================================
+   DOT
+===================================== */
+
+.dot{
+
+    width:26px;
+
+    height:26px;
+
+    border-radius:50%;
+
+    background:#38bdf8;
+
+    position:absolute;
+
+    top:40px;
+
+    right:-13px;
+
+    z-index:10;
+
+    box-shadow:
+    0 0 15px #38bdf8,
+    0 0 35px #38bdf8;
+}
+
+.right .dot{
+
+    left:-13px;
+}
+
+/* =====================================
+   CARD
+===================================== */
+
+.card{
+
+    background:rgba(15,23,42,.8);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    padding:30px;
+
+    transition:.4s;
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:#38bdf8;
+
+    box-shadow:
+    0 10px 35px rgba(56,189,248,.15);
+}
+
+/* =====================================
+   ICON
+===================================== */
+
+.icon{
+
+    font-size:3rem;
+
+    margin-bottom:15px;
+}
+
+.card h2{
+
+    color:#38bdf8;
+
+    margin-bottom:10px;
+
+    font-size:1.8rem;
+}
+
+.subtitle{
+
+    color:#94a3b8;
+
+    margin-bottom:20px;
+}
+
+/* =====================================
+   LISTA
+===================================== */
+
+.card ul{
+
+    margin-top:10px;
+
+    margin-left:20px;
+
+    margin-bottom:20px;
+}
+
+.card li{
+
+    margin-bottom:10px;
+
+    color:#cbd5e1;
+}
+
+/* =====================================
+   MATHEUS E PEDRO
+===================================== */
+
+.person-card{
+
+    margin-top:15px;
+
+    background:#111c31;
+
+    border-left:4px solid #38bdf8;
+
+    border-radius:12px;
+
+    padding:18px;
+}
+
+.person-card h3{
+
+    color:#7dd3fc;
+
+    margin-bottom:10px;
+}
+
+.person-card p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+}
+
+/* =====================================
+   PERGUNTA
+===================================== */
+
+.question{
+
+    margin-top:20px;
+
+    background:linear-gradient(
+    135deg,
+    #38bdf8,
+    #0ea5e9
+    );
+
+    color:#06111f;
+
+    font-weight:700;
+
+    padding:16px;
+
+    border-radius:12px;
+}
+
+/* =====================================
+   FINAL
+===================================== */
+
+.final-message{
+
+    max-width:1000px;
+
+    margin:0 auto 120px;
+
+    padding:40px;
+
+    text-align:center;
+
+    background:rgba(15,23,42,.8);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:24px;
+}
+
+.final-message h2{
+
+    color:#38bdf8;
+
+    margin-bottom:20px;
+}
+
+.final-message p{
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    margin-bottom:15px;
+}
+
+/* =====================================
+   ANIMAÇÃO
+===================================== */
+
+.card{
+
+    animation:fadeUp .7s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+    }
+}
+
+/* =====================================
+   RESPONSIVO
+===================================== */
+
+@media(max-width:1000px){
+
+    .timeline::before{
+
+        left:30px;
+    }
+
+    .timeline-item{
+
+        width:100%;
+
+        left:0 !important;
+
+        padding-left:80px !important;
+
+        padding-right:20px !important;
+    }
+
+    .dot{
+
+        left:18px !important;
+    }
+
+    .hero h1{
+
+        font-size:3rem;
+    }
+
+    .card h2{
+
+        font-size:1.4rem;
+    }
+}
